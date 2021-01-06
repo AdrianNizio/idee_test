@@ -1,0 +1,31 @@
+body {
+  margin: 0; }
+
+nav, footer {
+  width: 100%;
+  height: 80px; }
+
+footer {
+  background-color: #5e5e5e;
+  position: absolute;
+  bottom: 0; }
+
+nav {
+  background-color: #ebebeb; }
+
+.idee-test-navigation {
+  width: 260px; }
+
+.idee-test-navigation a div {
+  width: 86.66667px;
+  margin: 0; }
+
+.idee-test-navigation-space-left {
+  width: 190px; }
+
+.idee-test-navigation-space-right {
+  width: 135px; }
+
+.idee-test-navigation-space-left, .idee-test-navigation-space-right, .idee-test-navigation {
+  background-color: #9e9d9d;
+  height: 80px; }

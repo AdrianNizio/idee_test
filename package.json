@@ -1,0 +1,22 @@
+{
+  "name": "idee_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass source/main.scss styles/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianNizio/idee_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianNizio/idee_test/issues"
+  },
+  "homepage": "https://github.com/AdrianNizio/idee_test#readme",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
