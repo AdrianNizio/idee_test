@@ -78,6 +78,64 @@ nav div a {
 .idee-test-login {
   width: 95px; }
 
+.idee-test-form-wrapper {
+  display: flex; }
+
+section, .idee-test-login-form-right {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.idee-test-login-register-wrapper {
+  width: 1180px;
+  height: 660px;
+  background-color: grey; }
+
+.idee-test-login-form-left {
+  background-color: #fafafa;
+  padding: 15px;
+  width: 770px; }
+
+form {
+  background-color: #f0f0f0;
+  padding: 20px; }
+
+label {
+  font-size: 18px; }
+
+input {
+  height: 55px;
+  width: 100%; }
+
+.idee-test-form-wrapper {
+  border: 1px #eaeaea solid; }
+
+input, form, .idee-test-form-wrapper {
+  border-radius: 5px; }
+
+#parallelogram {
+  width: 300px;
+  height: 600px;
+  transform: skew(20deg);
+  z-index: -1;
+  position: absolute;
+  right: 25%;
+  background: red; }
+
 #active {
   color: white;
+  background-color: #5e5e5e; }
+
+.idee-test-login-form-right {
+  width: 380px;
+  background-color: #fafafa; }
+
+.idee-test-login-form-right a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+  width: 240px;
+  height: 60px;
   background-color: #5e5e5e; }
