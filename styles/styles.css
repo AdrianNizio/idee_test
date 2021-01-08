@@ -1,7 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0;
-  background-color: black; }
+  margin: 0; }
 
 a {
   text-decoration: none;
@@ -90,7 +89,6 @@ section, .idee-test-login-form-right {
 .idee-test-login-register-wrapper {
   width: 1180px;
   height: 660px;
-  background-color: grey;
   margin-top: 90px; }
 
 .idee-test-login-form-left {
@@ -124,11 +122,10 @@ input, form, .idee-test-form-wrapper {
 #parallelogram {
   width: 300px;
   height: 600px;
-  transform: skew(20deg);
+  transform: skew(-7deg) rotate(173deg);
   z-index: -1;
   position: absolute;
-  right: 25%;
-  background: red; }
+  background: #046db2; }
 
 #active {
   color: white;
@@ -144,35 +141,19 @@ input, form, .idee-test-form-wrapper {
   font-weight: 800;
   font-size: 18px; }
 
-.idee-test-login-form-right div {
-  width: 100%;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.idee-test-login-form-right a {
-  font-size: 18px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  color: white;
-  width: 240px;
-  height: 60px;
-  background-color: #5e5e5e; }
-
-.idee-test-submit-button {
+.idee-test-button {
   background-color: #5e5e5e;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   color: #ffffff;
-  font-size: 17px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500; }
+
+.idee-test-action-button {
   width: 400px;
-  height: 60px;
-  text-decoration: none; }
+  height: 60px; }
 
 .idee-test-button-right {
   margin-top: 30px;
@@ -180,7 +161,17 @@ input, form, .idee-test-form-wrapper {
   display: flex;
   justify-content: flex-end; }
 
-.idee-test-submit-button:hover, .idee-test-login-form-right a:hover {
+.idee-test-alternate-action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 60px; }
+
+.idee-test-alternate-action-button a {
+  color: white; }
+
+.idee-test-button:hover {
   background-color: #797979; }
 
 .idee-test-button-wrapper {
@@ -194,3 +185,26 @@ input, form, .idee-test-form-wrapper {
   font-size: 18px;
   color: #868686;
   padding-top: 10px; }
+
+.idee-test-login-register-wrapper header {
+  width: 50%; }
+  .idee-test-login-register-wrapper header h2 {
+    font-size: 36px;
+    margin: 0;
+    z-index: 2;
+    position: relative; }
+  .idee-test-login-register-wrapper header div {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 0px;
+    padding-top: 5px;
+    padding-bottom: 35px; }
+  .idee-test-login-register-wrapper header hr {
+    position: relative;
+    top: -6px;
+    background-color: #046db2;
+    border: none;
+    width: 75px;
+    height: 5px;
+    margin: 0;
+    z-index: 1; }
