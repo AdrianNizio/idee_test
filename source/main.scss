@@ -73,17 +73,26 @@ nav{
 .idee-test-nav-end a:hover{
     background-color: #6f6f6f;
 }
+.idee-test-navigation-button-section{
+    width:1180px;
+    min-width:1180px;
+}
 .idee-test-navigation-space-right{
+    width:100%;
+    max-width:370px;
+    min-width:130px;
     background-color: #9e9d9d;
-    width:135px;
+}
+.idee-test-navigation-space-left{
+    width:100%;
+    max-width:370px;
+    min-width:130px;
+    background-color: #cecdcd;
 }
 .idee-test-navigation-space-left,.idee-test-navigation-space-right,.idee-test-navigation{
     height:50px;
 }
-.idee-test-navigation-space-left{
-    width:190px;
-    background-color: #cecdcd;
-}
+
 .idee-test-register{
     width:115px;
 }
@@ -99,11 +108,7 @@ section,.idee-test-login-form-right{
     align-items: center;
     justify-content: center;
 }
-.idee-test-login-register-wrapper{
-    width:1180px;
-    height:660px;
-    margin-top:90px;
-}
+
 .idee-test-login-form-left{
     background-color: #fafafa;
     padding:15px;
@@ -203,6 +208,15 @@ input,form,.idee-test-form-wrapper{
     font-size:18px;
     color:#868686;
     padding-top: 10px;
+}
+.idee-test-breadcrumbs{
+    height:30px;
+    background-color: #f4f4f4;
+}
+.idee-test-login-register-wrapper{
+    width:1180px;
+    height:660px;
+    margin-top:90px;
 }
 .idee-test-login-register-wrapper{
     header{
