@@ -65,7 +65,7 @@ function submit_button_toggler(form_fields){
     const action_button = document.getElementsByClassName('idee-test-action-button');
     const warning_icon_counter = document.getElementsByClassName('warning-not-visible');
     
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; ++i) {
         form_fields[i].addEventListener("focusout", function(){
             if (warning_icon_counter.length < 3){
                 button_disabler(action_button);
@@ -86,7 +86,26 @@ function form_validator(){
     password_validator(form_fields, warning_icon, tooltip_text);
     email_validator(form_fields, warning_icon, tooltip_text);
     submit_button_toggler(form_fields);
+
+}
+function password_forgot_toggler(){
+    const forgot_password_button = document.getElementsByClassName('idee-test-button-left');
+    const forgot_password_wrapper = document.getElementsByClassName('idee-test-forgot-password-wrapper');
+    const forgot_password_box = document.getElementsByClassName('idee-test-forgot-password-box ');
+    const forgot_password_box_close_button = document.getElementsByClassName('fa-times');
+
+    //Open prompt
+    forgot_password_button[0].addEventListener("click", function(){
+        forgot_password_wrapper[0].classList.add('greyer');
+        forgot_password_box[0].classList.remove('password-forgot-not-visible');
+    })
+
+    //Close prompt
+    forgot_password_box_close_button[0].addEventListener("click", function(){
+        forgot_password_wrapper[0].classList.remove('greyer');
+        forgot_password_box[0].classList.add('password-forgot-not-visible');
+    })
 }
 
-
 form_validator();
+password_forgot_toggler();

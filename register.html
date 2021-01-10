@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2317aff2d4.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -40,43 +41,50 @@
         </div>
         <div class="idee-test-navigation-space-right"></div>
     </nav>
-<!--For layout purposes. Needs to be done with JS.-->
+
     <div class="idee-test-breadcrumbs">
-        <a href="home.html">Home</a>
-        <a>Register</a>
+        <div class="idee-test-breadcrumbs-list-wrapper">
+            <a href="home.html">Home</a>
+            <z>&nbsp;/&nbsp;</z>
+            <a id="breadcrumb-current">Register</a>
+    </div>
+            
     </div>
     <section>
         
         <div class="idee-test-login-register-wrapper">
             <header>
-                <h2>Login</h2>
+                <h2>Register</h2>
                 <hr>
-                <div>To access your account</div>
+                <div>To create your account</div>
             </header>
             <div class="idee-test-form-wrapper">
                 <div class="idee-test-login-form-left">
                     <form action="">
                         <div>
                             <div class="idee-test-labels"><b>Username</b></div>
-                            <input type="text" placeholder="Username" name="uname" required>
+                            <input class="form-field" type="text" placeholder="Username" name="uname">
+                            <div class="warning-icon-wrapper warning-not-visible"><i class="fas fa-exclamation-triangle"><span class="tooltiptext">Tooltip text</span></i></div>
                         </div>
                         
                         <div>
                             <div class="idee-test-labels"><b>Email Address</b></div>
-                            <input type="text" placeholder="Email Address" name="email" required>
+                            <input class="form-field" type="text" placeholder="Email Address" name="email">
+                            <div class="warning-icon-wrapper warning-not-visible"><i class="fas fa-exclamation-triangle"><span class="tooltiptext">Tooltip text</span></i></div>
                         </div>  
 
                         <div>
                             <div class="idee-test-labels"><b>Password</b></div>
-                            <input type="password" placeholder="Password" name="psw" required>
+                            <input class="form-field" type="password" placeholder="Password" name="psw">
+                            <div class="warning-icon-wrapper warning-not-visible"><i class="fas fa-exclamation-triangle"><span class="tooltiptext">Tooltip text</span></i></div>
                         </div>
 
                         <div class="idee-test-button-wrapper">
                             <div class="idee-test-button-left">
-                                <a href="google.com"><div>Forgot Password?</div></a>
+                                <div></div>
                             </div>
                             <div class="idee-test-button-right">
-                                <button class="idee-test-button idee-test-action-button"type="submit">Login</button>
+                                <button class="idee-test-button idee-test-action-button button-disabled" disabled="true" type="submit">Register</button>
                             </div>
                         </div>
                         
@@ -84,16 +92,17 @@
                     </form>
                 </div>
                 <div class="idee-test-login-form-right">
-                    <div class="idee-test-login-form-right-member">Not a member?</div>
-                    <div class="idee-test-button idee-test-alternate-action-button"><a href="google.com">Register today</a></div>
+                    <div class="idee-test-login-form-right-member">Already a member?</div>
+                    <div class="idee-test-button idee-test-alternate-action-button"><a href="login.html">Login now</a></div>
                     <div id="parallelogram"></div>
                 </div>
-                
+
             </div>
             
         </div>
 
     </section>
     <footer></footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

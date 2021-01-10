@@ -23,6 +23,7 @@ footer{
 nav{
     background-color: #ebebeb;
     display: flex;
+    justify-content: center;
 }
 nav{
     div{
@@ -79,14 +80,10 @@ nav{
 }
 .idee-test-navigation-space-right{
     width:100%;
-    max-width:370px;
-    min-width:130px;
     background-color: #9e9d9d;
 }
 .idee-test-navigation-space-left{
     width:100%;
-    max-width:370px;
-    min-width:130px;
     background-color: #cecdcd;
 }
 .idee-test-navigation-space-left,.idee-test-navigation-space-right,.idee-test-navigation{
@@ -170,9 +167,13 @@ input,form,.idee-test-form-wrapper{
     text-decoration:none;
     font-weight: 500;
 }
-.idee-test-action-button{
+.idee-test-action-button,.idee-test-reset-button{
     width:400px;
     height:60px;
+}
+.idee-test-reset-button{
+    margin:auto;
+    margin-top:20px;
 }
 .idee-test-button-right{
     margin-top:30px;
@@ -204,8 +205,7 @@ input,form,.idee-test-form-wrapper{
 .idee-test-button-left{
     width:150px;
     margin-right: 215px;
-}
-.idee-test-button-left{
+    cursor: pointer;
     font-size:18px;
     color:#868686;
     padding-top: 10px;
@@ -213,6 +213,8 @@ input,form,.idee-test-form-wrapper{
 .idee-test-breadcrumbs{
     height:30px;
     background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
 }
 .idee-test-login-register-wrapper{
     width:1180px;
@@ -271,11 +273,25 @@ input,form,.idee-test-form-wrapper{
             height:5px;
             margin:0;
             z-index:1;
+            text-align: left;
         }
     }
 
 }
-.warning-not-visible{
+.idee-test-breadcrumbs-list-wrapper{
+    width:1290px;
+    margin:auto;
+}
+.idee-test-breadcrumbs-spacer{
+    width: 100%;
+max-width: 370px;
+min-width: 130px;
+}
+.idee-test-forgot-password-box{
+width: 700px;
+margin: auto;
+}
+.warning-not-visible,.password-forgot-not-visible{
     display:none;
 }
 .button-enabled:hover {
@@ -285,4 +301,30 @@ input,form,.idee-test-form-wrapper{
 .button-disabled{
     cursor:no-drop;
     background-color:#a7a7a7;
+}
+.greyer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.idee-test-breadcrumbs-list-wrapper{
+    a{
+        text-decoration: underline;
+        font-weight: 600;
+        color: #5a92c8;
+    }
+}
+#breadcrumb-current{
+    text-decoration: none;
+    color:#5e5e5e;
 }

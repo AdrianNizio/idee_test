@@ -41,12 +41,16 @@
         </div>
         <div class="idee-test-navigation-space-right"></div>
     </nav>
-<!--For layout purposes. Needs to be done with JS.-->
+
     <div class="idee-test-breadcrumbs">
-        <a href="home.html">Home</a>
-        <a>Login</a>
+        <div class="idee-test-breadcrumbs-list-wrapper">
+            <a href="home.html">Home</a>
+            <z>&nbsp;/&nbsp;</z>
+            <a id="breadcrumb-current">Login</a>
+        </div>
+            
     </div>
-    <section>
+        <section>
         
         <div class="idee-test-login-register-wrapper">
             <header>
@@ -92,7 +96,21 @@
                     <div class="idee-test-button idee-test-alternate-action-button"><a href="google.com">Register today</a></div>
                     <div id="parallelogram"></div>
                 </div>
-                
+                <div class="idee-test-forgot-password-wrapper">
+                    <div class="idee-test-forgot-password-box password-forgot-not-visible">
+                        <form action="">                            
+                            <div>
+                                <i class="fas fa-times"></i>
+                                <div class="idee-test-labels"><b>Type email to get link to reset password</b></div>
+                                <input class="form-field" type="text" placeholder="Email Address" name="email">
+                                <div class="warning-icon-wrapper"><i class="fas fa-exclamation-triangle"><span class="tooltiptext">Tooltip text</span></i></div>
+                            </div>  
+                            <div class="idee-test-button-wrapper">  
+                                <button class="idee-test-button idee-test-reset-button" type="submit">Send link</button>
+                            </div>  
+                        </form>
+                    </div>
+                </div>
             </div>
             
         </div>
