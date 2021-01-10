@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2317aff2d4.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -58,25 +59,28 @@
                     <form action="">
                         <div>
                             <div class="idee-test-labels"><b>Username</b></div>
-                            <input type="text" placeholder="Username" name="uname" required>
+                            <input class="form-field" type="text" placeholder="Username" name="uname">
+                            <div class="warning-icon-wrapper warning-not-visible"><i class="fas fa-exclamation-triangle"><span class="tooltiptext">Tooltip text</span></i></div>
                         </div>
                         
                         <div>
                             <div class="idee-test-labels"><b>Email Address</b></div>
-                            <input type="text" placeholder="Email Address" name="email" required>
+                            <input class="form-field" type="text" placeholder="Email Address" name="email">
+                            <div class="warning-icon-wrapper warning-not-visible"><i class="fas fa-exclamation-triangle"><span class="tooltiptext">Tooltip text</span></i></div>
                         </div>  
 
                         <div>
                             <div class="idee-test-labels"><b>Password</b></div>
-                            <input type="password" placeholder="Password" name="psw" required>
+                            <input class="form-field" type="password" placeholder="Password" name="psw">
+                            <div class="warning-icon-wrapper warning-not-visible"><i class="fas fa-exclamation-triangle"><span class="tooltiptext">Tooltip text</span></i></div>
                         </div>
 
                         <div class="idee-test-button-wrapper">
                             <div class="idee-test-button-left">
-                                <a href="google.com"><div>Forgot Password?</div></a>
+                                <div>Forgot Password?</div>
                             </div>
                             <div class="idee-test-button-right">
-                                <button class="idee-test-button idee-test-action-button"type="submit">Login</button>
+                                <button class="idee-test-button idee-test-action-button button-disabled" disabled="true" type="submit">Login</button>
                             </div>
                         </div>
                         
@@ -95,5 +99,6 @@
 
     </section>
     <footer></footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
