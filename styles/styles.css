@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0; }
 
 a {
@@ -9,7 +9,8 @@ a {
 a:hover {
   color: #353535; }
 
-nav, footer {
+nav,
+footer {
   font-weight: 800;
   width: 100%;
   height: 50px; }
@@ -51,7 +52,8 @@ nav div a {
   color: #212121;
   background-color: #9e9d9d; }
 
-.idee-test-nav-start, .idee-test-nav-end {
+.idee-test-nav-start,
+.idee-test-nav-end {
   width: 50%; }
 
 .idee-test-nav-end {
@@ -73,7 +75,9 @@ nav div a {
   width: 100%;
   background-color: #cecdcd; }
 
-.idee-test-navigation-space-left, .idee-test-navigation-space-right, .idee-test-navigation {
+.idee-test-navigation-space-left,
+.idee-test-navigation-space-right,
+.idee-test-navigation {
   height: 50px; }
 
 .idee-test-register {
@@ -86,7 +90,8 @@ nav div a {
   display: flex;
   border: 1px #eaeaea solid; }
 
-section, .idee-test-login-form-right {
+section,
+.idee-test-login-form-right {
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -116,7 +121,9 @@ input {
   padding: 5px 15px;
   box-sizing: border-box; }
 
-input, form, .idee-test-form-wrapper {
+input,
+form,
+.idee-test-form-wrapper {
   border-radius: 5px; }
 
 #parallelogram {
@@ -151,7 +158,8 @@ input, form, .idee-test-form-wrapper {
   text-decoration: none;
   font-weight: 500; }
 
-.idee-test-action-button, .idee-test-reset-button {
+.idee-test-action-button,
+.idee-test-reset-button {
   width: 400px;
   height: 60px; }
 
@@ -263,7 +271,8 @@ input, form, .idee-test-form-wrapper {
   width: 700px;
   margin: auto; }
 
-.warning-not-visible, .password-forgot-not-visible {
+.warning-not-visible,
+.password-forgot-not-visible {
   display: none; }
 
 .button-enabled:hover {

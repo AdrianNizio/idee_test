@@ -17,6 +17,9 @@
   "homepage": "https://github.com/AdrianNizio/idee_test#readme",
   "description": "",
   "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-google": "^0.14.0",
     "node-sass": "^5.0.0"
-  }
+  },
+  "dependencies": {}
 }
